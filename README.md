@@ -80,25 +80,33 @@ ark restore <backup_path>
 
 ### Destroy the ark
 
-````bash
+```bash
 ark destroy
-```Development
+```
+
+## Development
+
 To set up the development environment:
 
 ### Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/ark.git
-```cd ark
+cd ark
+```
 
 ### Create a virtual environment:
+
 ```bash
 python -m venv venv
-```source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
 ### Install dependencies:
+
 ```bash
 pip install -r requirements.txt
-````
+```
 
 ### Run tests:
 
