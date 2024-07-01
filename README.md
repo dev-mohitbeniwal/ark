@@ -1,6 +1,16 @@
-# Local Ark
+# Build Status
 
-Local Ark is a secure, command-line based password and sensitive information manager designed for developers and security-conscious users. It provides a robust, encrypted storage solution for your sensitive data, right on your local machine.
+![CLI Tests](https://github.com/dev-mohitbeniwal/ark/actions/workflows/cli-tests.yml/badge.svg) [![codecov](https://codecov.io/gh/dev-mohitbeniwal/ark/branch/main/graph/badge.svg?flag=cli)](https://codecov.io/gh/dev-mohitbeniwal/ark)
+
+![Storage Tests](https://github.com/dev-mohitbeniwal/ark/actions/workflows/storage-tests.yml/badge.svg) [![codecov](https://codecov.io/gh/dev-mohitbeniwal/ark/branch/main/graph/badge.svg?flag=storage)](https://codecov.io/gh/dev-mohitbeniwal/ark)
+
+![Crypto Tests](https://github.com/dev-mohitbeniwal/ark/actions/workflows/crypto-tests.yml/badge.svg) [![codecov](https://codecov.io/gh/dev-mohitbeniwal/ark/branch/main/graph/badge.svg?flag=crypto)](https://codecov.io/gh/dev-mohitbeniwal/ark)
+
+![Utils Tests](https://github.com/dev-mohitbeniwal/ark/actions/workflows/utils-tests.yml/badge.svg) [![codecov](https://codecov.io/gh/dev-mohitbeniwal/ark/branch/main/graph/badge.svg?flag=utils)](https://codecov.io/gh/dev-mohitbeniwal/ark)
+
+# Ark
+
+Ark is a secure, command-line based password and sensitive information manager designed for developers and security-conscious users. It provides a robust, encrypted storage solution for your sensitive data, right on your local machine.
 
 ## Features
 
@@ -124,4 +134,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ### Disclaimer
 
-While Local Ark implements various security measures, no system is 100% secure. Use at your own risk and always follow best practices for password management and system security.
+While Ark implements various security measures, no system is 100% secure. Use at your own risk and always follow best practices for password management and system security.

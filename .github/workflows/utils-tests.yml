@@ -1,0 +1,37 @@
+name: Utils Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Add src directory to Python path
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run Utils tests
+        run: |
+          pytest --cov=local_vault.utils --cov-report=xml --cov-report=term tests/test_utils.py
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage.xml
+          flags: utils
+          name: utils-tests
